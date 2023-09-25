@@ -76,8 +76,8 @@ var2 <- "hello"
 "hello" -> var3
 
 # Removing variable
-rm(var3)
-print(var3)
+rm(var2)
+# print(var2) #rror: object 'var2' not found Execution halted    #nolint
 
 # <-----------------------------------------------<<< SCOPE OF VARIABLE IN R PROGRAMMIG >>>-----------------------------------------------------------------> #nolint
 
