@@ -142,8 +142,29 @@ print(q)
 
 # <-----------------------------------<<< TRUE/FALSE KEYWORD >>>------------------------------------------------------------------> #nolint
 
-# NULL: In R, NULL represents the null object. NULL is used to represent missing and undefined values. NULL is the logical representation of a statement which is neither TRUE nor FALSE. #nolint
+# NULL: In R, NULL represents the null object. NULL is used to represent missing and undefined values. NULL is the logical representation of #nolint
+# a statement which is neither TRUE nor FALSE. #nolint
 
 v = as.null(c(1,2,3,4,5))
 print(v)
+
+# <-----------------------------------<<< INF ANS NAN KEYWORD >>>------------------------------------------------------------------> #nolint
+
+# Inf and NaN: In R is.finite and is.infinite return a vector of the same length as x, where x is an R object to be tested. This indicating which #nolint
+# elements are finite (not infinite and not missing) or infinite. Inf and -Inf keyword mean positive and negative infinity whereas NaN keyword means ‘Not a Number’. #nolint
+
+x = c(Inf, 2, 3)
+print(is.infinite(x))
+
+y = c(1, NaN, 3)
+print(is.nan(y))
+
+# <-----------------------------------<<< INF ANS NAN KEYWORD >>>------------------------------------------------------------------> #nolint
+
+# tands for “Not Available” and is used to represent missing values. There are also constants NA_integer_, NA_real_, NA_complex_ and NA_character_ #nolint 
+# of the other atomic vector types which support missing values and all of these are reserved words in the R language. #nolint
+
+z = c(1, 2, NA, 3, NA, 5)
+print(is.na(z))
+
 # <-----------------------------------------------<<< THE END >>>------------------------------------------------------------------> #nolint
