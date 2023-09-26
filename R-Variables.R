@@ -79,8 +79,30 @@ var2 <- "hello"
 rm(var2)
 # print(var2) #rror: object 'var2' not found Execution halted    #nolint
 
-# <-----------------------------------------------<<< SCOPE OF VARIABLE IN R PROGRAMMIG >>>-----------------------------------------------------------------> #nolint
+# <----------------------------------------<<< SCOPE OF VARIABLE IN R PROGRAMMIG >>>------------------------------------------------------------> #nolint
+var1 = c(1, 2, 3 ,4 ,5)
+print(var1)
 
+var2 = c("Python", "R", "Machine Learning", "Data Science", "Deep Learning")
+print(var2)
+
+var3 = list(var1, var2)
+print(var3)
+
+# <--------------------------------------------<<< RULES OF NAMING VARIABLES >>>--------------------------------------------------------------> #nolint
+
+b2 = 7
+prasad_profession = "student"
+prasad.profession = "student"
+
+# Wrong naming 
+# 2b = 7
+# Error: unexpected symbol in "2b"
+# Execution halted
+
+# prasad@profession = "student"
+# Error: object 'prasad' not found
+# Execution halted
 # <-----------------------------------------------<<< GLOBAL VARIABLE >>>-----------------------------------------------------------------> #nolint
 
 global = 5
@@ -91,6 +113,15 @@ display()
 global = 10
 display()
 
+# acessing global variable
+# func = function(){
+#     a = 10
+# }
+# func()
+# print(a)
+
+# Error: object 'a' not found
+
 # <-----------------------------------------------<<< LOCAL VARIABLE >>>-----------------------------------------------------------------> #nolint
 
 func = function() {
@@ -100,4 +131,18 @@ print(age)
 cat("Age is: \n")
 func()
 
+# <--------------------------------------<<< OUTER/INNER FUNCTION VARIVABLE SCOPE >>>-----------------------------------------------------> #nolint
+ outerfunction = function(){
+    innerfunction = function(){
+        a <<- 15
+        print(a)
+    }
+    innerfunction()
+    print(a)
+ }
+ outerfunction()
+ print(a)
+
+
 # <-----------------------------------------------<<< THE END >>>-----------------------------------------------------------------> #nolint
+
