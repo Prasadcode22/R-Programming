@@ -79,4 +79,67 @@ for (i in z){
     print(i)
 }
 
+# <---------------------------------------------------<<< IF STATEMENT  >>>---------------------------------------------------------------> #nolint
+
+a =  45
+b = 50
+
+if (a>b){
+    c = a - b
+    print("Condition a > b is TRUE")
+    print(paste("Difference between a and b is: ", c))
+}
+
+if (a<b){
+    c = a - b 
+    print("Condition a < b is TRUE")
+    print(paste("Difference between a and b is: ", c))
+}
+
+# <---------------------------------------------------<<< IF ELSE STATEMENT  >>>---------------------------------------------------------------> #nolint
+
+if (a>b){
+    c = a - b
+    print("Condition a > b is TRUE")
+    print(paste("Difference between a and b is: ", c))
+}else if (a < b){
+    c = b - a
+    print("Condition a < b is TRUE")
+    print(paste("Difference between a and b is: ", c))
+}else{
+    print("Conditions are FALSE")
+    print("Both are equal")
+}
+
+# <---------------------------------------------------<<< NESTED IF ELSE STATEMENT  >>>--------------------------------------------------------> #nolint
+
+a = 20
+b = 28
+
+if (a == 20){
+    if (b == 10){
+        print("a:20 b:20")
+    }else{
+        print("a:20 b:28")
+    }
+}else{
+    if (a == 28){
+        print("a:28 b:20")
+    }else{
+        print("a:28 b:28")
+    }
+}
+
+# <---------------------------------------------------<<< NESTED IF ELSE STATEMENT  >>>--------------------------------------------------------> #nolint
+
+x = switch(2, "geeks1", "for", "geeks2")
+print(x)
+
+y = switch("GFG3", "GFG3"="Geeks1", "GFG1"="for","GFG3"="Geeks2")
+print(y)
+
+z = switch("GFG", "GFG0"="Geeks1", "GFG1"="for", "GFG2"="Geeks2")
+print(z)
+
+
 # <---------------------------------------------------<<< THE END >>>---------------------------------------------------------------------> #nolint
