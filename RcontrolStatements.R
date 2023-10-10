@@ -141,5 +141,42 @@ print(y)
 z = switch("GFG", "GFG0"="Geeks1", "GFG1"="for", "GFG2"="Geeks2")
 print(z)
 
+# <---------------------------------------------------<<< NESTED IF ELSE STATEMENT  >>>--------------------------------------------------------> #nolint
 
+
+
+val = switch( 3, "Prasad", "Nitesh", "Yash", "Sanket","Vivek", "Prathamesh")
+print(val)
+
+val1 = 6  
+val2 = 7
+val3 = "s"  
+result = switch(   
+    val3,   
+    "a"= cat("Addition =", val1 + val2),   
+    "d"= cat("Subtraction =", val1 - val2),   
+    "r"= cat("Division = ", val1 / val2),   
+    "s"= cat("Multiplication =", val1 * val2), 
+    "m"= cat("Modulus =", val1 %% val2), 
+    "p"= cat("Power =", val1 ^ val2) 
+)   
+    
+print(result)   
+
+
+# <-------------------------------------------------<<< NESTED FOR LOOP >>>---------------------------------------------------------------> #nolint
+for (i in 1:3){
+    for(j in 1:i){
+        print(i * j)
+    }
+}
+
+# <--------------------------------------<<< CREATING MULTIPLE PLOTS IN R PROGRAMMING >>>----------------------------------------------------> #nolint
+
+mat <- matrix( nrow(100), ncol = 5)
+par(mfrow = c(2,3))
+
+for (i in 1:5){
+    hist(mat[, i], main = paste("Column", i), xlab = "Values", col = "lightblue")
+}
 # <---------------------------------------------------<<< THE END >>>---------------------------------------------------------------------> #nolint
